@@ -1,5 +1,5 @@
 import { cvData } from "@/data/cvData";
-import { SiPython, SiCplusplus, SiTypescript, SiDocker, SiLinux } from "react-icons/si";
+import { SiPython, SiCplusplus, SiDocker } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 
 const PREFIX = '';
@@ -85,7 +85,7 @@ export default function Home() {
             <p>{cvData.summary}</p>
             <p>
               My work focuses on <strong>geometric cohesion</strong> and <strong>topology</strong> in non-equilibrium systems. 
-              Beyond the lab, I've applied my technical expertise to full-stack engineering, 
+              Beyond the lab, I&apos;ve applied my technical expertise to full-stack engineering, 
               building high-scale health-tech applications.
             </p>
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
       {/* Footer */}
       <footer style={{ padding: '6rem 0', textAlign: 'center', borderTop: '1px solid var(--card-border)', background: 'var(--pastel-blue)' }}>
         <div className="container">
-          <h2 style={{ color: '#0f172a' }}>Let's Connect</h2>
+          <h2 style={{ color: '#0f172a' }}>Let&apos;s Connect</h2>
           <p style={{ color: 'var(--text-color)' }}>Always open to discussing physics, software, or potential collaborations.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '3rem' }}>
             <a href={`mailto:${cvData.email}`} style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 700 }}>Email</a>
