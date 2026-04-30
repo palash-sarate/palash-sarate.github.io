@@ -48,7 +48,7 @@ export const cvData = {
       title: "Entangled Granular Chains: Geometry, Cohesion, and Emergent Mechanics",
       authors: "Palash S. Sarate",
       journal: "Ph.D. Thesis, Indian Institute of Science, Bangalore (2026)",
-      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XwZHqnsAAAAJ&citation_for_view=XwZHqnsAAAAJ:zYLM7Y9cAGgC"
+      link: "https://etd.iisc.ac.in/handle/2005/8738"
     },
     {
       title: "Column to pile transition in quasi-static deposition of granular chains",
