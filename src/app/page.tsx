@@ -2,6 +2,8 @@ import { cvData } from "@/data/cvData";
 import { SiPython, SiCplusplus, SiTypescript, SiDocker, SiLinux } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 
+const PREFIX = '';
+
 export default function Home() {
   return (
     <main>
@@ -29,7 +31,12 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="hero container animate-fade-in">
+      <section className="hero container animate-fade-in" style={{
+        background: "linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url('/documents/chain_bckg.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
         <div className="hero-subtitle">Physics Researcher & Software Engineer</div>
         <h1>{cvData.name}</h1>
         <p style={{ fontSize: '1.25rem', maxWidth: '700px', marginTop: '1.5rem', color: '#475569' }}>
@@ -43,11 +50,11 @@ export default function Home() {
             <div style={{ fontSize: '0.7rem', marginTop: '0.5rem', color: 'var(--text-muted)' }}>Python</div>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <img src="/documents/image.png" alt="MATLAB" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
+            <img src={`${PREFIX}/documents/image.png`} alt="MATLAB" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
             <div style={{ fontSize: '0.7rem', marginTop: '0.5rem', color: 'var(--text-muted)' }}>MATLAB</div>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <img src="/documents/lammps.png" alt="LAMMPS" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
+            <img src={`${PREFIX}/documents/lammps.png`} alt="LAMMPS" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
             <div style={{ fontSize: '0.7rem', marginTop: '0.5rem', color: 'var(--text-muted)' }}>LAMMPS</div>
           </div>
           <div style={{ textAlign: 'center' }}>
@@ -87,7 +94,7 @@ export default function Home() {
             {cvData.education.map((edu, index) => (
               <div key={index} style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                 {edu.school.includes("Indian Institute of Science") && (
-                  <img src="/iisclogo.png" alt="IISc Logo" style={{ width: '40px', height: '40px', flexShrink: 0, background: '#fff', padding: '4px', borderRadius: '4px', objectFit: 'contain' }} />
+                  <img src={`${PREFIX}/iisclogo.png`} alt="IISc Logo" style={{ width: '40px', height: '40px', flexShrink: 0, background: '#fff', padding: '4px', borderRadius: '4px', objectFit: 'contain' }} />
                 )}
                 <div>
                   <div style={{ fontWeight: 700, color: '#1e293b' }}>{edu.degree}</div>
@@ -163,7 +170,7 @@ export default function Home() {
         <h2>Moments</h2>
         <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
           <div className="card" style={{ padding: '0', overflow: 'hidden' }}>
-            <img src="/defense.jpg" alt="Ph.D. Defense Completion" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+            <img src={`${PREFIX}/defense.jpg`} alt="Ph.D. Defense Completion" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
             <div style={{ padding: '1.5rem' }}>
               <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>Ph.D. Defense Completion</h3>
               <p style={{ fontSize: '0.85rem', margin: '0' }}>at the Indian Institute of Science.</p>

@@ -5,9 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // If your GitHub Pages is at https://<username>.github.io/<repo>/, 
-  // you might need a base path. Assuming root for now.
-  // basePath: '/PersonalPage',
+  // No base path needed for username.github.io root deployment
+  // basePath: '',
+  // assetPrefix: '',
 };
 
 export default nextConfig;
