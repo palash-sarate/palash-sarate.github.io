@@ -5,7 +5,8 @@ export const cvData = {
   email: "palashsarate@gmail.com",
   linkedin: "https://linkedin.com/in/palash-sarate",
   github: "https://github.com/palash-sarate",
-  summary: "Ph.D. specializing in experimental soft matter physics and granular materials from IISc Bangalore. Expert in probing how topology and connectivity govern macroscopic mechanical response in non-equilibrium systems. Experienced in developing custom experimental platforms, data analysis (Python, MATLAB), and machine learning pipelines.",
+  googleScholar: "https://scholar.google.com/citations?user=XwZHqnsAAAAJ&hl=en",
+  summary: "Ph.D. specializing in the rheology and mechanics of granular materials from IISc Bangalore. Expert in probing how topology and connectivity govern macroscopic mechanical response in entangled systems. Complemented by a strong background in software engineering and developing data-driven research tools.",
   education: [
     {
       degree: "Integrated MSc-PhD in Physics",

@@ -32,8 +32,8 @@ export default function Home() {
       <section className="hero container animate-fade-in">
         <div className="hero-subtitle">Physics Researcher & Software Engineer</div>
         <h1>{cvData.name}</h1>
-        <p style={{ fontSize: '1.25rem', maxWidth: '700px', marginTop: '1.5rem' }}>
-          Exploring the frontiers of <strong>Soft Matter Physics</strong> and <strong>Granular Materials</strong> at the Indian Institute of Science.
+        <p style={{ fontSize: '1.25rem', maxWidth: '700px', marginTop: '1.5rem', color: '#475569' }}>
+          Specializing in the rheology and mechanics of granular materials.
         </p>
         
         {/* Tech Stack Icons */}
@@ -102,7 +102,10 @@ export default function Home() {
 
       {/* Research / Publications Section */}
       <section id="research" className="container">
-        <h2>Research & Publications</h2>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+          <h2 style={{ margin: 0 }}>Research & Publications</h2>
+          <a href={cvData.googleScholar} target="_blank" className="btn btn-outline" style={{ fontSize: '0.85rem' }}>View Full Scholar Profile</a>
+        </div>
         <div className="grid">
           {cvData.publications.map((pub, index) => (
             <div key={index} className="card">
@@ -178,9 +181,10 @@ export default function Home() {
             <a href={`mailto:${cvData.email}`} style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 700 }}>Email</a>
             <a href={cvData.linkedin} target="_blank" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 700 }}>LinkedIn</a>
             <a href={cvData.github} target="_blank" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 700 }}>GitHub</a>
+            <a href={cvData.googleScholar} target="_blank" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontWeight: 700 }}>Google Scholar</a>
           </div>
           <div style={{ marginTop: '5rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-            © {new Date().getFullYear()} {cvData.name}. Built with Next.js.
+            © {new Date().getFullYear()} {cvData.name}.
           </div>
         </div>
       </footer>
